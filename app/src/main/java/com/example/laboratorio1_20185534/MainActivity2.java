@@ -24,8 +24,60 @@ public class MainActivity2 extends AppCompatActivity {
         Button btn8 = findViewById(R.id.btn8);
         Button btn9 = findViewById(R.id.btn9);
         btn1.setOnClickListener(view -> {
-
+            String label = btn1.getText().toString();
+            if (!(label.equals("O") || label.equals("X"))){
+                CambiarEstado(btn1);
+            }
         });
+        btn2.setOnClickListener(view -> {
+            String label = btn2.getText().toString();
+            if (!(label.equals("O") || label.equals("X"))){
+                CambiarEstado(btn2);
+            }
+        });
+        btn3.setOnClickListener(view -> {
+            String label = btn3.getText().toString();
+            if (!(label.equals("O") || label.equals("X"))){
+                CambiarEstado(btn3);
+            }
+        });
+        btn4.setOnClickListener(view -> {
+            String label = btn4.getText().toString();
+            if (!(label.equals("O") || label.equals("X"))){
+                CambiarEstado(btn4);
+            }
+        });
+        btn5.setOnClickListener(view -> {
+            String label = btn5.getText().toString();
+            if (!(label.equals("O") || label.equals("X"))){
+                CambiarEstado(btn5);
+            }
+        });
+        btn6.setOnClickListener(view -> {
+            String label = btn6.getText().toString();
+            if (!(label.equals("O") || label.equals("X"))){
+                CambiarEstado(btn6);
+            }
+        });
+        btn7.setOnClickListener(view -> {
+            String label = btn7.getText().toString();
+            if (!(label.equals("O") || label.equals("X"))){
+                CambiarEstado(btn7);
+            }
+        });
+        btn8.setOnClickListener(view -> {
+            String label = btn8.getText().toString();
+            if (!(label.equals("O") || label.equals("X"))){
+                CambiarEstado(btn8);
+            }
+        });
+        btn9.setOnClickListener(view -> {
+            String label = btn9.getText().toString();
+            if (!(label.equals("O") || label.equals("X"))){
+                CambiarEstado(btn9);
+            }
+        });
+
 
     }
 
