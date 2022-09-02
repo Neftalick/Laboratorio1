@@ -46,11 +46,11 @@ public class MainActivity2 extends AppCompatActivity {
 
     public void ReiniciarJuego(View view){
         //Resetear todo el juego
-        TableLayout tableLayout = findViewById(R.id.tableLayout);
+        TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
         for(int i =0; i <=2;i++){
             TableRow tr = (TableRow) tableLayout.getChildAt(i);
             for(int j=0;j<=2;j++){
-                Button button = (Button) tableLayout.getChildAt(j);
+                Button button = (Button) tr.getChildAt(j);
                 button.setText('-');
             }
         }
