@@ -103,7 +103,7 @@ public class MainActivity2 extends AppCompatActivity {
             TableRow tr = (TableRow) tableLayout.getChildAt(i);
             for(int j=0;j<=2;j++){
                 Button button = (Button) tr.getChildAt(j);
-                button.setText('-');
+                button.setText("-");
             }
         }
     }
