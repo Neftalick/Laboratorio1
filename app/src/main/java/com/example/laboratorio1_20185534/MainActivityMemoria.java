@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.example.laboratorio1.R;
+import com.example.laboratorio1_20185534.R;
 
 import java.util.Collection;
 import java.util.Collections;

@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.laboratorio1.R;
+import com.example.laboratorio1_20185534.R;
 
 public class MainActivity extends AppCompatActivity {
 
