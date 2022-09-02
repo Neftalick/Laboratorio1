@@ -62,21 +62,24 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button16"
+                android:id="@+id/btn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="CambiarEstado"
                 android:text="-" />
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/btn2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="CambiarEstado"
                 android:text="-" />
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/btn3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="CambiarEstado"
                 android:text="." />
         </TableRow>
 
@@ -85,21 +88,24 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button19"
+                android:id="@+id/btn4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="CambiarEstado"
                 android:text="-" />
 
             <Button
-                android:id="@+id/button18"
+                android:id="@+id/btn5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="CambiarEstado"
                 android:text="-" />
 
             <Button
-                android:id="@+id/button17"
+                android:id="@+id/btn6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="CambiarEstado"
                 android:text="-" />
         </TableRow>
 
@@ -108,21 +114,24 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button22"
+                android:id="@+id/btn7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="CambiarEstado"
                 android:text="-" />
 
             <Button
-                android:id="@+id/button21"
+                android:id="@+id/btn8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="CambiarEstado"
                 android:text="-" />
 
             <Button
-                android:id="@+id/button20"
+                android:id="@+id/btn9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="CambiarEstado"
                 android:text="-" />
         </TableRow>
 
