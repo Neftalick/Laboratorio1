@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         Button btn_Tres_en_raya = findViewById(R.id.button_tresEnRaya);
         btn_Tres_en_raya.setOnClickListener(view -> {
             //boton que dirige a tres en raya view
-            Intent intent = new Intent(MainActivity.this,MainActivity2.class);
-            startActivity(intent);
+            //Intent intent = new Intent(MainActivity.this);
+
         });
 
     }
