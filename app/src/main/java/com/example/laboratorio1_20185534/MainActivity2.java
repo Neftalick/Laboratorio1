@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -95,7 +97,14 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void ReiniciarJuego(View view){
-        //id
-
+        //Resetear todo el juego
+        TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
+        for(int i =0; i <=2;i++){
+            TableRow tr = (TableRow) tableLayout.getChildAt(i);
+            for(int j=0;j<=2;j++){
+                Button button = (Button) tr.getChildAt(j);
+                button.setText('-');
+            }
+        }
     }
 }
