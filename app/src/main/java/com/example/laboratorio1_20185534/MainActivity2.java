@@ -2,15 +2,22 @@ package com.example.laboratorio1_20185534;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 
+import com.example.laboratorio1_20185534.Entity.Resultados;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity2 extends AppCompatActivity {
 
     boolean primero = true;
+    Resultados resultados = new Resultados();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +32,12 @@ public class MainActivity2 extends AppCompatActivity {
         Button btn7 = findViewById(R.id.btn7);
         Button btn8 = findViewById(R.id.btn8);
         Button btn9 = findViewById(R.id.btn9);
+        Button btn_estadistica = findViewById(R.id.btn_estadisticas);
+        btn_estadistica.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity2.this,MainActivity3.class);
+            intent.putExtra("Resultados", resultados);
+            startActivity(intent);
+        });
         btn1.setOnClickListener(view -> {
             String label = btn1.getText().toString();
             if (!(label.equals("O") || label.equals("X"))){
@@ -106,5 +119,6 @@ public class MainActivity2 extends AppCompatActivity {
                 button.setText("-");
             }
         }
+        resultados.result.add(0);
     }
 }
