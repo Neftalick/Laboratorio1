@@ -1,7 +1,6 @@
-package com.example.laboratorio1_20185534;
+package com.example.laboratorio1;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -11,7 +10,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main
+        );
         Button btn_memoria = findViewById(R.id.button_memoria);
         btn_memoria.setOnClickListener(view -> {
             //boton que dirige a memoria's view
