@@ -26,6 +26,8 @@ public class MainActivity3 extends AppCompatActivity {
                 result = result + "Juego " + i + " : Ganó 0\n";
             }else if (resultados.result.get(i) == 0){
                 result = result + "Juego " + i + " : Canceló\n";
+            }else if (resultados.result.get(i) == 3){
+                result = result + "Juego" + i + " : Empate\n";
             }
         }
         textView.setText(result);
