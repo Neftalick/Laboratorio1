@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TableLayout;
@@ -13,7 +12,7 @@ import android.widget.Toast;
 
 import com.example.laboratorio1_20185534.Entity.Resultados;
 
-public class MainActivity2 extends AppCompatActivity {
+public class TresRaya extends AppCompatActivity {
 
     boolean primero = true;
     Resultados resultados = new Resultados();
@@ -21,14 +20,13 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
-        Button btn1 = findViewById(R.id.btn_1);
-        Button btn2 = findViewById(R.id.btn_2);
-        Button btn3 = findViewById(R.id.btn_3);
-        Button btn4 = findViewById(R.id.btn_4);
+        setContentView(R.layout.vista_tresraya);
+        Button btn1 = findViewById(R.id.btn1);
+        Button btn2 = findViewById(R.id.btn2);
+        Button btn3 = findViewById(R.id.btn3);
+        Button btn4 = findViewById(R.id.btn4);
         Button btn5 = findViewById(R.id.btn_5);
-        Button btn6 = findViewById(R.id.btn6);
-
+        Button btn6 = findViewById(R.id.btn_6);
         Button btn7 = findViewById(R.id.btn_7);
         Button btn8 = findViewById(R.id.btn_8);
         Button btn9 = findViewById(R.id.btn_9);
@@ -36,7 +34,7 @@ public class MainActivity2 extends AppCompatActivity {
         Button btn_estadistica = findViewById(R.id.btn_estadisticas);
         TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);
         btn_estadistica.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
+            Intent intent = new Intent(TresRaya.this, EstadisticasTresRaya.class);
             intent.putExtra("Resultados", resultados);
             startActivity(intent);
         });

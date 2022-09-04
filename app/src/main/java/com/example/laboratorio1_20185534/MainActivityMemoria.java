@@ -175,52 +175,52 @@ public class MainActivityMemoria extends AppCompatActivity {
 
     public void cargarBotones(){
 
-        btn1 = findViewById(R.id.btn_1);
+        btn1 = findViewById(R.id.btn1);
         botonera[0]=btn1;
 
-        btn2 = findViewById(R.id.btn_2);
+        btn2 = findViewById(R.id.btn2);
         botonera[1]=btn2;
 
-        btn3 = findViewById(R.id.btn_3);
+        btn3 = findViewById(R.id.btn3);
         botonera[2]=btn3;
 
-        btn4 = findViewById(R.id.btn_4);
+        btn4 = findViewById(R.id.btn4);
         botonera[3]=btn4;
 
-        btn5 = findViewById(R.id.btn_5);
+        btn5 = findViewById(R.id.btn5);
         botonera[4]=btn5;
 
         btn6 = findViewById(R.id.btn_6);
         botonera[5]=btn6;
 
-        btn7 = findViewById(R.id.btn_7);
+        btn7 = findViewById(R.id.btn7);
         botonera[6]=btn7;
 
-        btn8 = findViewById(R.id.btn_8);
+        btn8 = findViewById(R.id.btn8);
         botonera[7]=btn8;
 
-        btn9 = findViewById(R.id.btn_9);
+        btn9 = findViewById(R.id.btn9);
         botonera[8]=btn9;
 
-        btn10 = findViewById(R.id.btn_10);
+        btn10 = findViewById(R.id.btn10);
         botonera[9]=btn10;
 
-        btn11 = findViewById(R.id.btn_11);
+        btn11 = findViewById(R.id.btn11);
         botonera[10]=btn11;
 
-        btn12 = findViewById(R.id.btn_12);
+        btn12 = findViewById(R.id.btn12);
         botonera[11]=btn12;
 
-        btn13 = findViewById(R.id.btn_13);
+        btn13 = findViewById(R.id.btn13);
         botonera[12]=btn13;
 
-        btn14 = findViewById(R.id.btn_14);
+        btn14 = findViewById(R.id.btn14);
         botonera[13]=btn14;
 
-        btn15 = findViewById(R.id.btn_15);
+        btn15 = findViewById(R.id.btn15);
         botonera[14]=btn15;
 
-        btn16 = findViewById(R.id.btn_16);
+        btn16 = findViewById(R.id.btn16);
         botonera[15]=btn16;
 
     }

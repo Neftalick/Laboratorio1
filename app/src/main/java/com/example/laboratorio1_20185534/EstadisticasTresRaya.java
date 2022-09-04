@@ -9,12 +9,12 @@ import android.widget.TextView;
 
 import com.example.laboratorio1_20185534.Entity.Resultados;
 
-public class MainActivity3 extends AppCompatActivity {
+public class EstadisticasTresRaya extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.estadisticas_tres_raya);
         Intent intent = this.getIntent();
         TextView textView = findViewById(R.id.label_resultados);
         Resultados resultados = (Resultados) intent.getSerializableExtra("Resultados");
