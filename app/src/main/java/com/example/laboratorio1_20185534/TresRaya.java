@@ -25,11 +25,11 @@ public class TresRaya extends AppCompatActivity {
         Button btn2 = findViewById(R.id.btn2);
         Button btn3 = findViewById(R.id.btn3);
         Button btn4 = findViewById(R.id.btn4);
-        Button btn5 = findViewById(R.id.btn5);
-        Button btn6 = findViewById(R.id.btn6);
-        Button btn7 = findViewById(R.id.btn6);
-        Button btn8 = findViewById(R.id.btn8);
-        Button btn9 = findViewById(R.id.btn9);
+        Button btn5 = findViewById(R.id.btn_5);
+        Button btn6 = findViewById(R.id.btn_6);
+        Button btn7 = findViewById(R.id.btn_7);
+        Button btn8 = findViewById(R.id.btn_8);
+        Button btn9 = findViewById(R.id.btn_9);
 
         Button btn_estadistica = findViewById(R.id.btn_estadisticas);
         TableLayout tableLayout = (TableLayout) findViewById(R.id.tableLayout);

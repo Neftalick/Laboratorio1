@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btn_14"
+        android:id="@+id/btn14"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:text="@string/btn_prueba"
@@ -28,7 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.341"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_10"
+        app:layout_constraintTop_toBottomOf="@+id/btn10"
         app:layout_constraintVertical_bias="0.077" />
 
     <Button
@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.334" />
 
     <Button
-        android:id="@+id/btn_16"
+        android:id="@+id/btn16"
         android:layout_width="45dp"
         android:layout_height="46dp"
         android:text="@string/btn_prueba"
@@ -57,7 +57,7 @@
         app:layout_constraintVertical_bias="0.548" />
 
     <Button
-        android:id="@+id/btn_15"
+        android:id="@+id/btn15"
         android:layout_width="45dp"
         android:layout_height="46dp"
         android:layout_marginTop="32dp"
@@ -70,7 +70,7 @@
         app:layout_constraintVertical_bias="0.526" />
 
     <Button
-        android:id="@+id/btn_12"
+        android:id="@+id/btn12"
         android:layout_width="45dp"
         android:layout_height="46dp"
         android:text="@string/btn_prueba"
@@ -82,18 +82,18 @@
         app:layout_constraintVertical_bias="0.443" />
 
     <Button
-        android:id="@+id/btn_13"
+        android:id="@+id/btn13"
         android:layout_width="45dp"
         android:layout_height="46dp"
         android:text="@string/btn_prueba"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_14"
+        app:layout_constraintEnd_toStartOf="@+id/btn14"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.548" />
 
     <Button
-        android:id="@+id/btn_10"
+        android:id="@+id/btn10"
         android:layout_width="45dp"
         android:layout_height="46dp"
         android:text="@string/btn_prueba"
@@ -105,7 +105,7 @@
         app:layout_constraintVertical_bias="0.443" />
 
     <Button
-        android:id="@+id/btn_11"
+        android:id="@+id/btn11"
         android:layout_width="45dp"
         android:layout_height="46dp"
         android:text="@string/btn_prueba"
@@ -117,7 +117,7 @@
         app:layout_constraintVertical_bias="0.443" />
 
     <Button
-        android:id="@+id/btn_9"
+        android:id="@+id/btn9"
         android:layout_width="45dp"
         android:layout_height="46dp"
         android:text="@string/btn_prueba"
@@ -129,7 +129,7 @@
         app:layout_constraintVertical_bias="0.443" />
 
     <Button
-        android:id="@+id/btn_8"
+        android:id="@+id/btn8"
         android:layout_width="45dp"
         android:layout_height="46dp"
         android:text="@string/btn_prueba"
@@ -141,7 +141,7 @@
         app:layout_constraintVertical_bias="0.324" />
 
     <Button
-        android:id="@+id/btn_7"
+        android:id="@+id/btn7"
         android:layout_width="45dp"
         android:layout_height="46dp"
         android:text="@string/btn_prueba"
@@ -153,7 +153,7 @@
         app:layout_constraintVertical_bias="0.322" />
 
     <Button
-        android:id="@+id/btn_5"
+        android:id="@+id/btn5"
         android:layout_width="45dp"
         android:layout_height="46dp"
         android:text="@string/btn_prueba"
@@ -165,7 +165,7 @@
         app:layout_constraintVertical_bias="0.322" />
 
     <Button
-        android:id="@+id/btn_3"
+        android:id="@+id/btn3"
         android:layout_width="45dp"
         android:layout_height="46dp"
         android:text="@string/btn_prueba"
@@ -177,7 +177,7 @@
         app:layout_constraintVertical_bias="0.21" />
 
     <Button
-        android:id="@+id/btn_2"
+        android:id="@+id/btn2"
         android:layout_width="45dp"
         android:layout_height="46dp"
         android:text="@string/btn_prueba"
@@ -201,9 +201,10 @@
         app:layout_constraintVertical_bias="0.099" />
 
     <Button
-        android:id="@+id/btn_1"
+        android:id="@+id/btn1"
         android:layout_width="45dp"
         android:layout_height="46dp"
+        android:layout_marginTop="144dp"
         android:text="@string/btn_prueba"
         app:layout_constraintBottom_toTopOf="@+id/btn_9"
         app:layout_constraintEnd_toEndOf="parent"
@@ -213,7 +214,7 @@
         app:layout_constraintVertical_bias="0.558" />
 
     <Button
-        android:id="@+id/btn_4"
+        android:id="@+id/btn4"
         android:layout_width="45dp"
         android:layout_height="46dp"
         android:text="@string/btn_prueba"

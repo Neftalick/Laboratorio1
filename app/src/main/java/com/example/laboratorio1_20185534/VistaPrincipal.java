@@ -16,6 +16,8 @@ public class VistaPrincipal extends AppCompatActivity {
         Button btn_memoria = findViewById(R.id.button_memoria);
         btn_memoria.setOnClickListener(view -> {
             //boton que dirige a memoria's view
+            Intent intent = new Intent(VistaPrincipal.this, MainActivityMemoria.class);
+            startActivity(intent);
         });
         Button btn_Tres_en_raya = findViewById(R.id.button_tresEnRaya);
         btn_Tres_en_raya.setOnClickListener(view -> {
