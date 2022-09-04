@@ -235,6 +235,19 @@
         app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="0.745" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="178dp"
+        android:layout_height="37dp"
+        android:text="¿Cuento tiempo demoras?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648"
+        tools:text="¿Cuento tiempo demoras?" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
