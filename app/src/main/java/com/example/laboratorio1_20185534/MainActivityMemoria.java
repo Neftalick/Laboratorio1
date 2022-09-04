@@ -7,7 +7,6 @@ import android.os.Handler;
 import android.util.Log;
 import android.widget.Button;
 
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
