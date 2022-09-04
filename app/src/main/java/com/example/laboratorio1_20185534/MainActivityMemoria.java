@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 public class MainActivityMemoria extends AppCompatActivity {
 
@@ -28,6 +30,8 @@ public class MainActivityMemoria extends AppCompatActivity {
     long tiempoFinal;
     Button primero;
     boolean bloqueo = false;
+
+
 
 
     String primeraLetra, segundaLetra;
@@ -83,6 +87,7 @@ public class MainActivityMemoria extends AppCompatActivity {
     }
 
     public void comprobar(int i, final Button btnValor){
+        TextView textView = findViewById(R.id.textResultado);
 
         if (primero==null){
 
@@ -113,7 +118,12 @@ public class MainActivityMemoria extends AppCompatActivity {
                     long TiempoTotal = tiempoFinal-tiempoInicial;
 
                     Log.d("msg","total de tiempo realizado : " + Long.toString(TiempoTotal));
-                    cantidadJuegos.put(juegos,Long.toString(TiempoTotal));
+
+                    long minutes = TimeUnit.MILLISECONDS.toMinutes(TiempoTotal);
+                    Log.d("msg","total de minutos " + Long.toString(minutes).toString());
+                    cantidadJuegos.put(juegos,Long.toString(minutes).toString());
+                    textView.setText("Total de minutos : " + Long.toString(minutes).toString());
+
                 }else{
                     cantidadJuegos.put(juegos,"se canceló el juego");
                     Log.d("msg","se canceló el juego");
