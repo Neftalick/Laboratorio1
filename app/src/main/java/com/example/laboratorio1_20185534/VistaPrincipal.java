@@ -6,12 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class VistaPrincipal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main
+        setContentView(R.layout.vista_principal
         );
         Button btn_memoria = findViewById(R.id.button_memoria);
         btn_memoria.setOnClickListener(view -> {
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Button btn_Tres_en_raya = findViewById(R.id.button_tresEnRaya);
         btn_Tres_en_raya.setOnClickListener(view -> {
             //boton que dirige a tres en raya view
-            Intent intent = new Intent(MainActivity.this,MainActivity2.class);
+            Intent intent = new Intent(VistaPrincipal.this, TresRaya.class);
             startActivity(intent);
 
         });
