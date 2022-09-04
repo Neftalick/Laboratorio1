@@ -2,10 +2,13 @@ package com.example.laboratorio1_20185534;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.widget.Button;
+
+import com.example.laboratorio1_20185534.Entity.Tiempos;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -28,6 +31,8 @@ public class MainActivityMemoria extends AppCompatActivity {
     long tiempoFinal;
     Button primero;
     boolean bloqueo = false;
+    Tiempos tiempos = new Tiempos();
+
 
 
     String primeraLetra, segundaLetra;
@@ -43,7 +48,12 @@ public class MainActivityMemoria extends AppCompatActivity {
           cargarBotones();
           iniciarJuego();
           Log.d("juegos","numero de juego: " + Integer.toString(juegos));
-
+          Button btnEstadisticas = findViewById(R.id.btnEstadisticas);
+          btnEstadisticas.setOnClickListener(view -> {
+              Intent intent = new Intent(MainActivityMemoria.this, EstadisticasMemoria.class);
+              intent.putExtra("Resultados", tiempos);
+              startActivity(intent);
+          });
           Button btnNuevo = findViewById(R.id.btnNuevo);
           btnNuevo.setOnClickListener(view -> {
               juegos++;

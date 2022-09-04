@@ -36,7 +36,7 @@ public class TresRaya extends AppCompatActivity {
         btn_estadistica.setOnClickListener(view -> {
             Intent intent = new Intent(TresRaya.this, EstadisticasTresRaya.class);
             intent.putExtra("Resultados", resultados);
-            startActivity(intent);
+            startActivityForResult(intent,1);
         });
 
         btn1.setOnClickListener(view -> {
