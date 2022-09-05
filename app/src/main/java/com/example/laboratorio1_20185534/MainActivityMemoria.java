@@ -11,9 +11,11 @@ import android.widget.TextView;
 
 import com.example.laboratorio1_20185534.Entity.Tiempos;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
@@ -33,10 +35,10 @@ public class MainActivityMemoria extends AppCompatActivity {
     long tiempoFinal;
     Button primero;
     boolean bloqueo = false;
-    Tiempos tiempos = new Tiempos();
+    //Tiempos tiempos = new Tiempos();
+    List<Integer> tiempos = new ArrayList<>();
 
-
-
+    TextView textView = findViewById(R.id.textResultado);
 
 
     String primeraLetra, segundaLetra;
@@ -55,18 +57,25 @@ public class MainActivityMemoria extends AppCompatActivity {
           Button btnEstadisticas = findViewById(R.id.btnEstadisticas);
           btnEstadisticas.setOnClickListener(view -> {
               Intent intent = new Intent(MainActivityMemoria.this, EstadisticasMemoria.class);
-              intent.putExtra("Resultados", tiempos);
+              intent.putExtra("Resultados", (Serializable) cantidadJuegos);
               startActivity(intent);
           });
           Button btnNuevo = findViewById(R.id.btnNuevo);
           btnNuevo.setOnClickListener(view -> {
-              juegos++;
-              Log.d("juegos","numero de juego: " + Integer.toString(juegos));
-              bloqueo=false;
-              lista_1.clear();
-              metodoRandom();
-              cargarBotones();
-              iniciarJuego();
+              textView.setText("¿Cuanto tiempo te demoras?");
+              if(aciertos!=8){
+                  cantidadJuegos.put(juegos,"se canceló juego");
+                  Log.d("resultado","juego " +Integer.toString(juegos)+ "se canceló ");
+              }
+                  juegos++;
+                  Log.d("juegos","numero de juego: " + Integer.toString(juegos));
+                  bloqueo=false;
+                  lista_1.clear();
+                  metodoRandom();
+                  cargarBotones();
+                  iniciarJuego();
+
+
           });
     }
 
@@ -97,7 +106,7 @@ public class MainActivityMemoria extends AppCompatActivity {
     }
 
     public void comprobar(int i, final Button btnValor){
-        TextView textView = findViewById(R.id.textResultado);
+
 
         if (primero==null){
 
@@ -127,16 +136,14 @@ public class MainActivityMemoria extends AppCompatActivity {
                     tiempoFinal = System.currentTimeMillis();
                     long TiempoTotal = tiempoFinal-tiempoInicial;
 
-                    Log.d("msg","total de tiempo realizado : " + Long.toString(TiempoTotal));
-
                     long minutes = TimeUnit.MILLISECONDS.toMinutes(TiempoTotal);
-                    Log.d("msg","total de minutos " + Long.toString(minutes).toString());
-                    cantidadJuegos.put(juegos,Long.toString(minutes).toString());
+                    Log.d("resultado","juego " + Integer.toString(juegos) + " total de minutos " + Long.toString(minutes));
+                    cantidadJuegos.put(juegos, " Realizó un total de " + Long.toString(minutes).toString() + " minutos");
+
                     textView.setText("Total de minutos : " + Long.toString(minutes).toString());
 
                 }else{
-                    cantidadJuegos.put(juegos,"se canceló el juego");
-                    Log.d("msg","se canceló el juego");
+
                 }
 
             }else{
