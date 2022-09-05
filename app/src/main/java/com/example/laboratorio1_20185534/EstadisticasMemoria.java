@@ -21,8 +21,10 @@ public class EstadisticasMemoria extends AppCompatActivity {
         Tiempos tiempos = (Tiempos) intent.getSerializableExtra("Resultados");
         String textoImprimir = new String();
         List<String> tiempo = tiempos.getTiemposGuardados();
+        Integer i = 1;
         for (String time: tiempo) {
-            textoImprimir += time+"\n";
+            textoImprimir += "Juego " + i + " : "+ time+"\n";
+            i++;
         }
         TextView textView = findViewById(R.id.EstadisticasMemoria);
         textView.setText(textoImprimir);
